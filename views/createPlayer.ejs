@@ -1,0 +1,23 @@
+<html lang="en">
+<%- include("./partials/head.ejs") %>
+
+<body>
+  <%- include("./partials/nav.ejs") %>
+
+  <div class="create-blog content">
+    <form action="/createPlayer" method="POST">
+      <label for="title">Player Name:</label>
+      <input type="text" id="name" name="name" required>
+      <label for="highScore">High Score:</label>
+      <input type="number" id="highScore" name="highScore" value="0">
+      <label for="level">Starting Level:</label>
+      <input type="number" id="level" name="level" value="1">
+      <label for="xp">Strating XP:</label>
+      <input type="number" id="xp" name="xp" value="0">
+      <button>Add New Player</button>
+    </form>
+  </div>
+
+  <%- include("./partials/footer.ejs") %>
+</body>
+</html>
